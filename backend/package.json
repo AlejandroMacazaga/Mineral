@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Backend of Mineral",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "test",
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon out/index.js",
+    "start": "node out/index.js",
     "compile": "tsc --project .",
     "compile-watch": "tsc --project . -w"
   },
@@ -16,7 +17,8 @@
   "author": "Alejandro Lopez de Guereñu",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^4.17.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.14",
     "@types/node": "^16.11.7",
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",

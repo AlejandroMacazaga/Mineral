@@ -1,5 +1,5 @@
 import { User } from "../models/user.js";
-import generateId from "../helpers/generateId";
+import generateId from "../helpers/generateId.js";
 import { Request, Response } from "express";
 import { HttpStatus } from "../constants/HttpStatus.js";
 
