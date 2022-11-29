@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { IProject } from "../interface/IProject";
+import { IProject } from "../interface/IProject.js";
 
 const projectSchema = new Schema<IProject>({
     name: {
