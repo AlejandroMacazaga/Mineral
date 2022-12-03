@@ -42,4 +42,8 @@ userSchema.methods.checkPassword = async function (passwordForm: string) : Promi
     return await bcrypt.compare(passwordForm, this.password);
 }
 
+userSchema.methods.findAll = async function (collaboratorIds: String[]) : Promise<IUser[]> {
+    
+}
+
 export const User = mongoose.model<IUserDocument>("User", userSchema);

@@ -4,7 +4,9 @@ class Database {
 
     static async connect() : Promise<void> {
         try {
-            const conn = await mongoose.connect(process.env.MONGO_URI);
+            const conn = await mongoose.connect(`${process.env.MONGO_URI}`,{
+                dbName : process.env.MONGO_NAME
+            });
             const url = `${conn.connection.host}:${conn.connection.port}`;
             console.info(`MongoDB connected at ${url}`);
         }
